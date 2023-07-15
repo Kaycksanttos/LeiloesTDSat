@@ -44,5 +44,10 @@ public class ProdutosDTO {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "ProdutosDTO{" + "id=" + id + ", nome=" + nome + ", valor=" + valor + ", status=" + status + '}';
+    }
     
 }
