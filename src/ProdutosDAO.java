@@ -24,7 +24,7 @@ public class ProdutosDAO {
     ResultSet resultset;
     ArrayList<ProdutosDTO> listagem = new ArrayList<>();
     
-    public void cadastrarProduto (ProdutosDTO produto){
+    public int cadastrarProduto (ProdutosDTO produto){
      
         //conn = new conectaDAO().connectDB();
       
@@ -63,10 +63,14 @@ public class ProdutosDAO {
 
                 listProdutos.add(produtosDTO);
             }
-            return listProdutos;
+            return (ArrayList<ProdutosDTO>) listProdutos;
         } catch (Exception e) {
             return null;
         }
+    }
+
+    List<ProdutosDTO> listarProdutoVendido() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
