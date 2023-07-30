@@ -21,9 +21,9 @@ public class conectaDAO {
         try {
             Properties properties = new Properties();
             properties.setProperty("user", "root");
-            properties.setProperty("password", "");
+            properties.setProperty("password", "220717Tk");
             properties.setProperty("useSSL", "false");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/leilao", properties);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uc11", properties);
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
         }
